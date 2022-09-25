@@ -52,7 +52,7 @@ Este projeto está sob a licença CC0-1.0. Caso gostaria de ler, por favor acess
 -   [REACT-NAVIGATION](https://reactnavigation.org/)
 -   [STYLED-COMPONENTS](https://styled-components.com)
 
-### Credits
+## Credits
 
 O template encontrei no Figma community, criado pelos alunos da Tribo criativa.
 LinkedIn da Tribo: https://www.linkedin.com/company/atribocriativa/

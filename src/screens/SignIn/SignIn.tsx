@@ -12,6 +12,16 @@ import {
     FormInputs,
     ViewHeader,
     ImageHeader,
+    ViewButton,
+    ButtonTitle,
+    ButtonEntrar,
+    ViewFooter,
+    ButtonFotter,
+    InfoButtonFooter,
+    TitleButtonFooter,
+    ViewForgotPassword,
+    TitleForgtPassword,
+    ButtonForgotPassword,
 } from './styles';
 
 export const SignIn = () => {
@@ -61,7 +71,26 @@ export const SignIn = () => {
                         placeholder='Digite sua senha'
                     />
                 </FormInputs>
+
+                <ViewForgotPassword>
+                    <ButtonForgotPassword>
+                        <TitleForgtPassword>Recuperar a senha?</TitleForgtPassword>
+                    </ButtonForgotPassword>
+                </ViewForgotPassword>
+
+                <ViewButton>
+                    <ButtonEntrar>
+                        <ButtonTitle>Entrar</ButtonTitle>
+                    </ButtonEntrar>
+                </ViewButton>
             </Content>
+
+            <ViewFooter>
+                <ButtonFotter>
+                    <TitleButtonFooter>Não tem uma conta?</TitleButtonFooter>
+                    <InfoButtonFooter>Cadastrar-se</InfoButtonFooter>
+                </ButtonFotter>
+            </ViewFooter>
         </Container>
     )
 }
