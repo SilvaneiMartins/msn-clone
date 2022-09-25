@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { View, Text, ActivityIndicator, StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { View, ActivityIndicator, StatusBar } from 'react-native';
 
 import {
     useFonts,
@@ -11,8 +12,8 @@ import {
     Poppins_800ExtraBold,
 } from '@expo-google-fonts/poppins';
 
+import Routes from './routes';
 import theme from './styles/theme';
-import { SignIn } from './screens/SignIn/SignIn';
 
 export const MyApp = () => {
 
@@ -30,19 +31,22 @@ export const MyApp = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <StatusBar
-                translucent
-                barStyle='dark-content'
-                backgroundColor={'transparent'}
-            />
+            <NavigationContainer>
+                <StatusBar
+                    translucent
+                    barStyle='dark-content'
+                    backgroundColor={'transparent'}
+                />
 
-            <View
-                style={{
-                    backgroundColor: theme.COLORS.BG_WHITE,
-                }}
-            >
-                <SignIn />
-            </View>
+                <View
+                    style={{
+                        // flex: 1,
+                        backgroundColor: theme.COLORS.BG_WHITE,
+                    }}
+                >
+                    <Routes />
+                </View>
+            </NavigationContainer>
         </ThemeProvider>
     )
 }
