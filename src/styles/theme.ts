@@ -20,10 +20,10 @@ export default {
     },
 
     FONTS: {
-        POPPINS_BOLD: 'Poppins_700Bold',
-        POPPINS_LIGHT: 'Poppins_300Light',
-        POPPINS_MEDIUM: 'Poppins_500Medium',
-        POPPINS_REGULAR: 'Poppins_400Regular',
-        POPPINS_EXTRA_BOLD: 'Poppins_800ExtraBold',
+        POPPINS_BOLD: 'Poppins-Bold',
+        POPPINS_LIGHT: 'Poppins-Light',
+        POPPINS_MEDIUM: 'Poppins-Medium',
+        POPPINS_REGULAR: 'Poppins-Regular',
+        POPPINS_EXTRA_BOLD: 'Poppins-ExtraBold',
     }
 }

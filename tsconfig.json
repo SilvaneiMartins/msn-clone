@@ -1,4 +1,30 @@
+// prettier-ignore
 {
-  "compilerOptions": {},
-  "extends": "expo/tsconfig.base"
+    "extends": "@tsconfig/react-native/tsconfig.json",
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "lib": [
+            "es2017"
+        ],
+        "allowJs": true,
+        "jsx": "react-native",
+        "noEmit": true,
+        "isolatedModules": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "types": [
+            "react-native",
+            "jest",
+            "styled-components-react-native"
+        ],
+    }
 }

@@ -15,7 +15,9 @@ import {
 import Routes from './routes';
 import theme from './styles/theme';
 
-export const MyApp = () => {
+import { List } from './screens/List/List';
+
+const MyApp = () => {
 
     const [fontsLoaded] = useFonts({
         Poppins_300Light,
@@ -37,11 +39,9 @@ export const MyApp = () => {
                     barStyle='dark-content'
                     backgroundColor={'transparent'}
                 />
-
                 <View
                     style={{
-                        // flex: 1,
-                        backgroundColor: theme.COLORS.BG_WHITE,
+                        backgroundColor: theme.COLORS.BG_WHITE
                     }}
                 >
                     <Routes />
@@ -50,3 +50,5 @@ export const MyApp = () => {
         </ThemeProvider>
     )
 }
+
+export default MyApp;
