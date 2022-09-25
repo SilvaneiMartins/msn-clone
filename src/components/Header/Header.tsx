@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from 'styled-components/native';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { GearSix } from 'phosphor-react-native';
 
 import AvatarPng from '../../assets/avatar.png'
 import {
@@ -10,6 +10,7 @@ import {
     ViewInfo,
     NameInfo,
     TextInfo,
+    ButtonIcon,
 } from './styles';
 
 interface HeaderProps {
@@ -17,13 +18,11 @@ interface HeaderProps {
     info: string;
     rightIcon?: boolean;
     iconSize?: number;
-    iconName?: React.ComponentProps<typeof MaterialCommunityIcons>["name"];
 }
 
 export const Header = ({
     name,
     info,
-    iconName,
     iconSize,
     rightIcon,
 }: HeaderProps) => {
@@ -41,11 +40,13 @@ export const Header = ({
                 </ViewInfo>
 
                 {rightIcon && (
-                    <MaterialCommunityIcons
-                        name={iconName}
-                        size={iconSize}
-                        color={COLORS.DARK_BLUE}
-                    />
+                    <ButtonIcon>
+                        <GearSix
+                            size={iconSize}
+                            weight="light"
+                            color={COLORS.DARK_BLUE}
+                        />
+                    </ButtonIcon>
                 )}
             </Content>
         </Container>
