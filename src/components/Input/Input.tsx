@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useTheme } from 'styled-components/native';
 import { TextInputProps, TouchableOpacity } from 'react-native';
 
@@ -11,7 +11,7 @@ interface InputProps extends TextInputProps {
     iconColor?: string;
     iconLeft?: boolean;
     rightIcon?: boolean;
-    iconName?: keyof typeof Ionicons.glyphMap;
+    iconName?: React.ComponentProps<typeof Ionicons>["name"];
     secureTextEntry?: boolean;
 }
 

@@ -1,10 +1,18 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+
+import { Header } from '../../components/Header/Header';
+import { Container } from './styles';
 
 export const List = () => {
     return (
-        <View>
-            <Text>List</Text>
-        </View>
+        <Container>
+            <Header
+                rightIcon
+                iconSize={25}
+                name='Silvanei Martins'
+                info='a dança da vida .-.'
+                iconName='mdiCogOutline'
+            />
+        </Container>
     )
 }
