@@ -1,7 +1,11 @@
 import React from 'react';
 import { useTheme } from 'styled-components/native';
 import { useNavigation } from '@react-navigation/native';
-import { CaretLeft, DotsThreeOutlineVertical  } from 'phosphor-react-native';
+import {
+    CaretLeft,
+    DotsThreeOutlineVertical,
+    MusicNoteSimple,
+} from 'phosphor-react-native';
 
 import AvatarPng from '../../assets/avatar.png'
 import {
@@ -12,6 +16,7 @@ import {
     NameInfo,
     TextInfo,
     ButtonIcon,
+    ViewTextInfo,
     ViewIconButton,
 } from './styles';
 
@@ -47,7 +52,10 @@ export const HeaderChat = ({
                 />
                 <ViewInfo>
                     <NameInfo>{name}</NameInfo>
-                    <TextInfo>{info}</TextInfo>
+                    <ViewTextInfo>
+                        <MusicNoteSimple size={13} weight="bold" color={COLORS.WRITE_500} />
+                        <TextInfo>{info}</TextInfo>
+                    </ViewTextInfo>
                 </ViewInfo>
 
                 {rightIcon && (

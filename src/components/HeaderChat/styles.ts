@@ -38,6 +38,7 @@ export const NameInfo = styled.Text`
 
 export const TextInfo = styled.Text`
     font-size: 14px;
+    margin-left: 5px;
     color: ${({ theme }) => theme.COLORS.WRITE_900};
     font-family: ${({ theme }) => theme.FONTS.POPPINS_LIGHT};
 `;
@@ -53,4 +54,9 @@ export const ViewIconButton = styled.TouchableOpacity`
     padding: 5px;
     border-radius: 30px;
     background-color: ${({ theme }) => theme.COLORS.WRITE_500};
+`;
+
+export const ViewTextInfo = styled.View`
+    flex-direction: row;
+    align-items: center;
 `;

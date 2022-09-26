@@ -44,6 +44,7 @@ export const Content = styled.View`
 
 export const FormInputs = styled.View`
     padding: 10px 0;
+    margin-top: 30px;
     justify-content: center;
 `;
 
@@ -66,7 +67,7 @@ export const ButtonForgotPassword = styled(Pressable)``;
 export const ViewButton = styled.View`
     width: 100%;
     height: 60px;
-    margin-top: 20px;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
 `;
@@ -88,7 +89,7 @@ export const ButtonEntrar = styled.TouchableOpacity`
 export const ViewFooter = styled.View`
     width: 100%;
     height: 60px;
-    margin-top: 10px;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
 `;

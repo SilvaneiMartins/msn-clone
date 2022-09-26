@@ -26,12 +26,8 @@ import {
 export const ForgotPassword = () => {
     const navigation = useNavigation();
 
-    const handleSignIn = () => {
-        navigation.navigate('List');
-    }
-
-    const handleCadastro = () => {
-        navigation.navigate('SignUp');
+    const handleLogin = () => {
+        navigation.navigate('SignIn');
     }
 
     return (
@@ -42,7 +38,6 @@ export const ForgotPassword = () => {
                         source={BgWaves}
                         resizeMode='cover'
                     />
-
                     <ViewLogo>
                         <ImageLogo
                             source={Logo}
@@ -50,12 +45,9 @@ export const ForgotPassword = () => {
                         />
                     </ViewLogo>
                 </ViewHeader>
-
                 <Content>
                     <Title>Bem vindo de volta!</Title>
-
                     <FormInputs>
-
                         <Input
                             iconLeft
                             typeEmail
@@ -67,20 +59,15 @@ export const ForgotPassword = () => {
                             keyboardType='email-address'
                             placeholder='Digite sua senha'
                         />
-
                     </FormInputs>
-
                     <ViewButton>
-                        <ButtonEntrar
-                            onPress={handleSignIn}
-                        >
+                        <ButtonEntrar>
                             <ButtonTitle>Recuperar Senha</ButtonTitle>
                         </ButtonEntrar>
                     </ViewButton>
                 </Content>
-
                 <ViewFooter>
-                    <ButtonFotter onPress={handleCadastro}>
+                    <ButtonFotter onPress={handleLogin}>
                         <TitleButtonFooter>Não quer recuperar senha?</TitleButtonFooter>
                         <InfoButtonFooter>Voltar</InfoButtonFooter>
                     </ButtonFotter>

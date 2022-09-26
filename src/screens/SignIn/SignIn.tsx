@@ -37,6 +37,10 @@ export const SignIn = () => {
         navigation.navigate('SignUp');
     }
 
+    const handleForgotPassword = () => {
+        navigation.navigate('ForgotPassword');
+    }
+
     return (
         <Container>
             <ScrollView>
@@ -87,7 +91,9 @@ export const SignIn = () => {
                     </FormInputs>
 
                     <ViewForgotPassword>
-                        <ButtonForgotPassword>
+                        <ButtonForgotPassword
+                            onPress={handleForgotPassword}
+                        >
                             <TitleForgtPassword>Recuperar a senha?</TitleForgtPassword>
                         </ButtonForgotPassword>
                     </ViewForgotPassword>
