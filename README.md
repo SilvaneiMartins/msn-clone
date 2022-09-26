@@ -9,6 +9,11 @@
 	🚧  APLICAÇÃO MOBILE PARA ANDROID E IOS MESSENGER-CLONE...  🚧
 </h3>
 
+## 📄 Informação do projeto;
+Projeto MSN CLONE Microsoft, que vai todo credito da criação da UI a designer Pamela Bonan que criou o clone da MSN que foi disponibilizado no figma community.
+
+O mesmo foi criado com o framework react native, styled-components com a linguagem typescript que logo abaixo encontra o link do repositório onde encontra mais informações sobre o projeto desenvolvido.
+
 <h1 align="center">
  	<a href="https://imgur.com/LHR0dBB"><img src="https://i.imgur.com/LHR0dBB.png" title="source: imgur.com" /></a>
 	<br />
