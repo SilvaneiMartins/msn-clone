@@ -69,13 +69,13 @@ Este projeto está sob a licença CC0-1.0. Caso gostaria de ler, por favor acess
 -   [REACT-NAVIGATION](https://reactnavigation.org/)
 -   [STYLED-COMPONENTS](https://styled-components.com)
 
-## Credits
+## 🛠 Credits
 
 O template encontrei no Figma community, que segue logo a baixo LinkdIn da criadora da UI.
 <br />
 LinkedIn da UI designer: https://www.linkedin.com/in/pamelabonan
 
-### Developer
+## 🚀 Developer
 
 <a href="https://github.com/SilvaneiMartins">
     <img
