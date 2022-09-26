@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import Logo from '../../assets/msnlogo.png';
 import BgWaves from '../../assets/bgwaves.png';
@@ -25,6 +26,12 @@ import {
 } from './styles';
 
 export const SignIn = () => {
+    const navigation = useNavigation();
+
+    const handleSignIn = () => {
+        navigation.navigate('List');
+    }
+
     return (
         <Container>
             <ViewHeader>
@@ -79,7 +86,9 @@ export const SignIn = () => {
                 </ViewForgotPassword>
 
                 <ViewButton>
-                    <ButtonEntrar>
+                    <ButtonEntrar
+                        onPress={handleSignIn}
+                    >
                         <ButtonTitle>Entrar</ButtonTitle>
                     </ButtonEntrar>
                 </ViewButton>

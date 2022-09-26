@@ -1,4 +1,3 @@
-import { Platform } from 'react-native';
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -6,10 +5,10 @@ export const Container = styled.View`
     height: 164px;
     padding-top: 25px;
     justify-content: center;
-    background-color: ${({ theme }) => theme.COLORS.BG_WHITE};
+    background-color: ${({ theme }) => theme.COLORS.VERY_LIGHT_BLUE};
 
     border-bottom-width: 2px;
-    border-bottom-color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
+    border-bottom-color: ${({ theme }) => theme.COLORS.STROKE};
 `;
 
 export const Content = styled.View`
@@ -39,7 +38,7 @@ export const NameInfo = styled.Text`
 
 export const TextInfo = styled.Text`
     font-size: 14px;
-    color: ${({ theme }) => theme.COLORS.BLACK_TEXT};
+    color: ${({ theme }) => theme.COLORS.WRITE_900};
     font-family: ${({ theme }) => theme.FONTS.POPPINS_LIGHT};
 `;
 
@@ -48,4 +47,10 @@ export const ButtonIcon = styled.TouchableOpacity`
     align-items: center;
     margin-right: 10px;
     justify-content: center;
+`;
+
+export const ViewIconButton = styled.TouchableOpacity`
+    padding: 5px;
+    border-radius: 30px;
+    background-color: ${({ theme }) => theme.COLORS.WRITE_500};
 `;
