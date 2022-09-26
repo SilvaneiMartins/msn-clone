@@ -4,6 +4,8 @@ export declare global {
             SignIn: undefined;
             List: undefined;
             Chat: undefined;
+            SignUp: undefined;
+            ForgotPassword: undefined;
         }
     }
 }

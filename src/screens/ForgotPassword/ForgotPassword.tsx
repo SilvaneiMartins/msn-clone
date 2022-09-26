@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import Logo from '../../assets/msnlogo.png';
@@ -20,13 +21,9 @@ import {
     ButtonFotter,
     InfoButtonFooter,
     TitleButtonFooter,
-    ViewForgotPassword,
-    TitleForgtPassword,
-    ButtonForgotPassword,
 } from './styles';
-import { ScrollView } from 'react-native';
 
-export const SignIn = () => {
+export const ForgotPassword = () => {
     const navigation = useNavigation();
 
     const handleSignIn = () => {
@@ -71,40 +68,21 @@ export const SignIn = () => {
                             placeholder='Digite sua senha'
                         />
 
-                        <Input
-                            iconLeft
-                            rightIcon
-                            typePassword
-                            label='Senha'
-                            iconSize={20}
-                            secureTextEntry
-                            autoCapitalize='none'
-                            autoCorrect={false}
-                            keyboardType='default'
-                            iconName='lock-closed-outline'
-                            placeholder='Digite sua senha'
-                        />
                     </FormInputs>
-
-                    <ViewForgotPassword>
-                        <ButtonForgotPassword>
-                            <TitleForgtPassword>Recuperar a senha?</TitleForgtPassword>
-                        </ButtonForgotPassword>
-                    </ViewForgotPassword>
 
                     <ViewButton>
                         <ButtonEntrar
                             onPress={handleSignIn}
                         >
-                            <ButtonTitle>Entrar</ButtonTitle>
+                            <ButtonTitle>Recuperar Senha</ButtonTitle>
                         </ButtonEntrar>
                     </ViewButton>
                 </Content>
 
                 <ViewFooter>
                     <ButtonFotter onPress={handleCadastro}>
-                        <TitleButtonFooter>Não tem uma conta?</TitleButtonFooter>
-                        <InfoButtonFooter>Cadastrar-se</InfoButtonFooter>
+                        <TitleButtonFooter>Não quer recuperar senha?</TitleButtonFooter>
+                        <InfoButtonFooter>Voltar</InfoButtonFooter>
                     </ButtonFotter>
                 </ViewFooter>
             </ScrollView>

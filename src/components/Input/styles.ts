@@ -8,14 +8,17 @@ export const Container = styled.View`
     border-radius: 40px;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     background-color: ${({ theme }) => theme.COLORS.INPUT};
 `;
 
 export const InputContainer = styled.TextInput`
     flex: 1;
     border: 0;
-    height: 38px;
-    font-size: 15px;
+    height: 45px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
     color: ${({ theme }) => theme.COLORS.BACKGROUND};
     font-family: ${({ theme }) => theme.FONTS.POPPINS_LIGHT};
 `;

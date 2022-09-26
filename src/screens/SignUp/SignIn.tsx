@@ -26,15 +26,11 @@ import {
 } from './styles';
 import { ScrollView } from 'react-native';
 
-export const SignIn = () => {
+export const SignUp = () => {
     const navigation = useNavigation();
 
     const handleSignIn = () => {
-        navigation.navigate('List');
-    }
-
-    const handleCadastro = () => {
-        navigation.navigate('SignUp');
+        navigation.navigate('SignIn');
     }
 
     return (
@@ -55,9 +51,19 @@ export const SignIn = () => {
                 </ViewHeader>
 
                 <Content>
-                    <Title>Bem vindo de volta!</Title>
-
+                    <Title>Cadastro</Title>
                     <FormInputs>
+                        <Input
+                            iconLeft
+                            typeUser
+                            label='Nome'
+                            iconSize={20}
+                            autoCorrect={false}
+                            autoCapitalize='none'
+                            secureTextEntry={false}
+                            keyboardType='email-address'
+                            placeholder='Digite seu nome'
+                        />
 
                         <Input
                             iconLeft
@@ -86,25 +92,19 @@ export const SignIn = () => {
                         />
                     </FormInputs>
 
-                    <ViewForgotPassword>
-                        <ButtonForgotPassword>
-                            <TitleForgtPassword>Recuperar a senha?</TitleForgtPassword>
-                        </ButtonForgotPassword>
-                    </ViewForgotPassword>
-
                     <ViewButton>
-                        <ButtonEntrar
-                            onPress={handleSignIn}
-                        >
-                            <ButtonTitle>Entrar</ButtonTitle>
+                        <ButtonEntrar>
+                            <ButtonTitle>Cadastrar</ButtonTitle>
                         </ButtonEntrar>
                     </ViewButton>
                 </Content>
 
                 <ViewFooter>
-                    <ButtonFotter onPress={handleCadastro}>
-                        <TitleButtonFooter>Não tem uma conta?</TitleButtonFooter>
-                        <InfoButtonFooter>Cadastrar-se</InfoButtonFooter>
+                    <ButtonFotter
+                        onPress={handleSignIn}
+                    >
+                        <TitleButtonFooter>Já tenho conta?</TitleButtonFooter>
+                        <InfoButtonFooter>Entrar</InfoButtonFooter>
                     </ButtonFotter>
                 </ViewFooter>
             </ScrollView>

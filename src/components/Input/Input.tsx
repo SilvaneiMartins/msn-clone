@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useTheme } from 'styled-components/native';
 import { TextInputProps, TouchableOpacity } from 'react-native';
+import {
+    User,
+    Eye,
+    EyeSlash,
+    LockSimple,
+    Envelope
+} from 'phosphor-react-native';
 
 import { Container, InputContainer, Label } from './styles';
 
@@ -13,6 +20,9 @@ interface InputProps extends TextInputProps {
     rightIcon?: boolean;
     iconName?: React.ComponentProps<typeof Ionicons>["name"];
     secureTextEntry?: boolean;
+    typeUser?: boolean;
+    typeEmail?: boolean;
+    typePassword?: boolean;
 }
 
 export const Input = ({
@@ -23,6 +33,9 @@ export const Input = ({
     iconLeft,
     rightIcon,
     secureTextEntry,
+    typeUser,
+    typeEmail,
+    typePassword,
     ...rest
 }: InputProps) => {
     const { COLORS } = useTheme();
@@ -33,12 +46,32 @@ export const Input = ({
             <Label>{label}</Label>
             <Container>
                 {iconLeft && (
-                    <Ionicons
-                        name={iconName}
-                        size={iconSize}
-                        color={iconColor || COLORS.BACKGROUND}
-                        style={{ padding: 5 }}
-                    />
+                    <>
+                        {typeUser && (
+                            <User
+                                size={20}
+                                weight="light"
+                                color={COLORS.BACKGROUND}
+                                style={{ padding: 5 }}
+                            />
+                        )}
+                        {typeEmail && (
+                            <Envelope
+                                size={20}
+                                weight="light"
+                                color={COLORS.BACKGROUND}
+                                style={{ padding: 5 }}
+                            />
+                        )}
+                        {typePassword && (
+                            <LockSimple
+                                size={20}
+                                weight="light"
+                                color={COLORS.BACKGROUND}
+                                style={{ padding: 5 }}
+                            />
+                        )}
+                    </>
                 )}
                 <InputContainer
                     {...rest}
@@ -46,14 +79,28 @@ export const Input = ({
                     underlineColorAndroid='transparent'
                 />
                 {rightIcon && (
-                    <TouchableOpacity onPress={() => setSecury(!secury)}>
-                        <Ionicons
-                            name={secury ? 'eye-outline' : 'eye-off-outline'}
-                            size={iconSize}
-                            color={iconColor || COLORS.BACKGROUND}
-                            style={{ padding: 5 }}
-                        />
-                    </TouchableOpacity>
+                    <>
+                        {secury ? (
+                            <TouchableOpacity onPress={() => setSecury(!secury)}>
+                                <Eye
+                                    size={20}
+                                    weight='light'
+                                    color={COLORS.BACKGROUND}
+                                    style={{ padding: 5 }}
+                                />
+                            </TouchableOpacity>
+                        ): (
+
+                            <TouchableOpacity onPress={() => setSecury(!secury)}>
+                                 <EyeSlash
+                                    size={20}
+                                    weight='light'
+                                    color={COLORS.BACKGROUND}
+                                    style={{ padding: 5 }}
+                                />
+                            </TouchableOpacity>
+                        )}
+                    </>
                 )}
             </Container>
         </>
