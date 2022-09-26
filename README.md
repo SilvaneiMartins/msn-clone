@@ -9,13 +9,30 @@
 	🚧  APLICAÇÃO MOBILE PARA ANDROID E IOS MESSENGER-CLONE...  🚧
 </h3>
 
+<h1 align="center">
+ 	<a href="https://imgur.com/LHR0dBB"><img src="https://i.imgur.com/LHR0dBB.png" title="source: imgur.com" /></a>
+	<br />
+	<br />
+	<a href="https://imgur.com/kVENS6v"><img src="https://i.imgur.com/kVENS6v.png" title="source: imgur.com" /></a>
+	<br />
+	<br />
+	<a href="https://imgur.com/UsWaY7l"><img src="https://i.imgur.com/UsWaY7l.png" title="source: imgur.com" /></a>
+	<br />
+    <br />
+	<a href="https://imgur.com/DUzF409"><img src="https://i.imgur.com/DUzF409.png" title="source: imgur.com" /></a>
+	<br />
+	<br />
+</h1>
+
 🚀 Você ira encontrar uma lista de funcionalidade do projeto. 📄
 
 ### Features
 
--   [ ] Tela de Login;
--   [ ] Tela de Favoritos e Grupos;
--   [ ] Chat;
+-   [X] Tela de Login;
+-   [X] Tela de Cadastro;
+-   [X] Tela de Recuperar Senha;
+-   [X] Tela de Favoritos e Grupos;
+-   [X] Chat;
 
 ## ✅ Instrução para rodar o projeto na maquina local;
 
