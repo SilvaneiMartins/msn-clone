@@ -1,7 +1,8 @@
+import { Pressable } from "react-native";
 import styled from "styled-components/native";
 
 
-export const Container = styled.View`
+export const Container = styled(Pressable)`
     width: 100%;
     height: 79px;
     background-color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};

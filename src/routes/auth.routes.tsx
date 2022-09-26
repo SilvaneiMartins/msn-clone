@@ -11,7 +11,7 @@ const { Navigator, Screen } = createNativeStackNavigator();
 export const AuthRoutes = () => {
     return (
         <Navigator
-            initialRouteName='Chat'
+            initialRouteName='SignIn'
             screenOptions={{
                 headerShown: false,
             }}

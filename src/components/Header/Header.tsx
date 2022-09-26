@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from 'styled-components/native';
-import { GearSix } from 'phosphor-react-native';
+import { useNavigation } from '@react-navigation/native';
+import { GearSix, SignOut } from 'phosphor-react-native';
 
 import AvatarPng from '../../assets/avatar.png'
 import {
@@ -27,6 +28,11 @@ export const Header = ({
     rightIcon,
 }: HeaderProps) => {
     const { COLORS } = useTheme();
+    const navigation = useNavigation();
+
+    const handleSignOut = () => {
+        navigation.navigate('SignIn');
+    }
 
     return (
         <Container>
@@ -48,6 +54,13 @@ export const Header = ({
                         />
                     </ButtonIcon>
                 )}
+                <ButtonIcon onPress={handleSignOut}>
+                    <SignOut
+                        size={30}
+                        weight="light"
+                        color={COLORS.DARK_BLUE}
+                    />
+                </ButtonIcon>
             </Content>
         </Container>
     )

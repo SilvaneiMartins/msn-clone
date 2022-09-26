@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from 'styled-components/native';
+import { useNavigation } from '@react-navigation/native';
 import { CaretLeft, DotsThreeOutlineVertical  } from 'phosphor-react-native';
 
 import AvatarPng from '../../assets/avatar.png'
@@ -28,11 +29,16 @@ export const HeaderChat = ({
     rightIcon,
 }: HeaderProps) => {
     const { COLORS } = useTheme();
+    const navigation = useNavigation();
+
+    const GoBack = () => {
+        navigation.goBack();
+    }
 
     return (
         <Container>
             <Content>
-                <ViewIconButton>
+                <ViewIconButton onPress={GoBack}>
                     <CaretLeft size={25} weight="light" color={COLORS.BACKGROUND} />
                 </ViewIconButton>
 

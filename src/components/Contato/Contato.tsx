@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from 'styled-components/native'
+import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity, StyleProp, ViewStyle } from 'react-native';
 import { BellSimpleRinging, MusicNoteSimple, Info, User } from 'phosphor-react-native';
 
@@ -42,10 +43,17 @@ export const Contato = ({
     style,
 }: IContatoProps) => {
     const { COLORS } = useTheme();
+    const navigation = useNavigation();
 
+    const GoChat = () => {
+        navigation.navigate('Chat');
+    }
 
     return (
-        <Container style={style}>
+        <Container
+            style={style}
+            onPress={GoChat}
+        >
             <ViewUser>
                 <Avatar
                     source={AvatarPng}

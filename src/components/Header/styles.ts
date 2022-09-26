@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     width: 100%;
-    height: 164px;
+    height: 134px;
     padding-top: 25px;
     justify-content: center;
     background-color: ${({ theme }) => theme.COLORS.BG_WHITE};
@@ -46,6 +46,6 @@ export const TextInfo = styled.Text`
 export const ButtonIcon = styled.TouchableOpacity`
     padding: 5px;
     align-items: center;
-    margin-right: 10px;
+    /* margin-right: 5px; */
     justify-content: center;
 `;

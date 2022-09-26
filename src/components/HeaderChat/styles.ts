@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     width: 100%;
-    height: 164px;
+    height: 114px;
     padding-top: 25px;
     justify-content: center;
     background-color: ${({ theme }) => theme.COLORS.VERY_LIGHT_BLUE};

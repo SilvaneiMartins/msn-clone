@@ -19,7 +19,7 @@ export const List = () => {
         <Container>
             <Header
                 rightIcon
-                iconSize={40}
+                iconSize={30}
                 name='Silvanei Martins'
                 info='A vida é boa e será bela .-.'
             />
